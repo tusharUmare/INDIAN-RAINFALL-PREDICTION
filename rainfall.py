@@ -18,7 +18,7 @@ st.set_page_config(page_title="India Rainfall Dashboard", layout="wide")
 # Load and prepare data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("../DataSets/rainfaLLIndia.csv")
+    df = pd.read_csv("rainfaLLIndia.csv")
     df['JUN-SEP'] = df[['JUN', 'JUL', 'AUG', 'SEP']].mean(axis=1)
     df['YoY_CHANGE'] = df.groupby('subdivision')['JUN-SEP'].diff()
     df['LAG1'] = df.groupby('subdivision')['JUN-SEP'].shift(1)
