@@ -1,12 +1,4 @@
-rainfall_app/
-├── streamlit_app.py          # Main entry
-├── pages/
-│   ├── 1_📊_EDA.py
-│   ├── 2_🤖_Machine_Learning.py
-│   ├── 3_📈_Forecasting.py
-│   └── 4_🔍_Clustering.py
-└── DataSets/
-    └── rainfaLLIndia.csv
+
 import streamlit as st
 
 st.set_page_config(page_title="India Rainfall Dashboard", layout="wide")
